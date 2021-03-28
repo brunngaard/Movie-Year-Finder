@@ -1,0 +1,14 @@
+.navigation {
+  background-color: green;
+}
+
+ul {
+  display: flex;
+  height: 70px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+li {
+  padding: 20px;
+}

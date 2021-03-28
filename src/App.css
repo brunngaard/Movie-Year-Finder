@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #02075d;
+  font-family: "Ubuntu", sans-serif;
+}
+.App {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.Container img {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  align-self: center;
+}
+
+.header {
+  margin-top: 50px;
+  font-size: 43px;
+  color: white;
+}
+
+.input-type {
+  margin-top: 25px;
+  background: whitesmoke;
+  width: 16%;
+  height: 30px;
+  border: none;
+  padding: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.info {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .Container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .input-type {
+    margin-top: 25px;
+    background: whitesmoke;
+    width: 30%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .Container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .input-type {
+    margin-top: 25px;
+    background: whitesmoke;
+    width: 75%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+  }
+
+  .header {
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+  }
+}
